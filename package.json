@@ -12,12 +12,12 @@
   "license": "MIT",
   "dependencies": {
     "@greenpress/admin": "^0.1.3",
-    "@greenpress/assets": "^1.0.0",
+    "@greenpress/assets": "^1.0.1",
     "@greenpress/auth": "^1.0.0",
-    "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#6ae5359899e3b25e5e3bafa939d634652b5c5e78",
+    "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#f5d932ead8774a2c531fd34b4f722848d4d4274a",
     "@greenpress/cli-service-pm2": "0.0.10",
     "@greenpress/content": "^1.0.4",
-    "@greenpress/secrets": "^1.0.0"
+    "@greenpress/secrets": "^1.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
