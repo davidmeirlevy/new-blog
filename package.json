@@ -14,10 +14,10 @@
   "dependencies": {
     "@greenpress/admin": "^0.1.11",
     "@greenpress/assets": "^1.0.2",
-    "@greenpress/auth": "^1.0.6",
-    "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#c51caeb276f74b3533c350949820304ab2b9e1f0",
+    "@greenpress/auth": "^1.0.7",
+    "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#8226cfb296644bc3ae9a0c245951a8db19e7b2ff",
     "@greenpress/cli-service-pm2": "0.0.13",
-    "@greenpress/content": "^1.0.6",
+    "@greenpress/content": "^1.0.8",
     "@greenpress/secrets": "^1.0.2"
   },
   "devDependencies": {
