@@ -16,7 +16,7 @@
     "@greenpress/assets": "^1.0.2",
     "@greenpress/auth": "^1.0.8",
     "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#436380db1d2d2b9cf890afd9251468bc7ba624c0",
-    "@greenpress/cli-service-pm2": "0.0.14",
+    "@greenpress/cli-service-pm2": "https://github.com/greenpress/cli-service-pm2.git#43bcd28fab5bf2bcc84f30a68a826f480d4acd52",
     "@greenpress/content": "^1.0.10",
     "@greenpress/secrets": "^1.0.2"
   },
