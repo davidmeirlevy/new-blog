@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@greenpress/admin": "^0.1.23",
-    "@greenpress/assets": "^1.0.9",
+    "@greenpress/assets": "^1.0.10",
     "@greenpress/auth": "^1.0.9",
     "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#436380db1d2d2b9cf890afd9251468bc7ba624c0",
     "@greenpress/cli-service-pm2": "0.1.5",
