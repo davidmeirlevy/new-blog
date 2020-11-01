@@ -11,9 +11,18 @@ services:
     networks:
       common_network:
   greenpress:
-    image: ${GREENPRESS_IMAGE}
+    build:
+      context: ..
+      dockerfile: Dockerfile.local
+    command: ${GP_LOCAL_COMMAND}
+    env_file:
+      - greenpress.local.env
+    volumes:
+      - ../dev:/app/dev
     ports:
-      - ${PORT}:3000
+      - "3000-3001:3000-3001"
+      - "9000-9010:9000-9010"
+      - "9029:9029"
     depends_on:
       - mongo
       - redis

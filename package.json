@@ -4,26 +4,37 @@
   "description": "My blog at davidlevy.co.il, based on Greenpress",
   "main": "index.js",
   "scripts": {
-    "dev": "gp-cli-service-pm2-dev",
-    "start": "gp-cli-service-pm2-prod",
-    "populate-db": "gp-cli-service-pm2-populate-db",
-    "docker:populate-db": "docker exec greenpress_greenpress_1 npm run populate-db"
+	"dev": "gp-cli-service-pm2-dev",
+	"start": "gp-cli-service-pm2-prod",
+	"populate-db": "gp-cli-service-pm2-populate-db"
   },
   "author": "David Meir-Levy <davidmeirlevy@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@greenpress/admin": "^0.1.25",
-    "@greenpress/assets": "^1.0.11",
-    "@greenpress/auth": "^1.0.12",
-    "@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#81f8a1348d956cbb71c03d50488f9df30566ab01",
-    "@greenpress/cli-service-pm2": "0.1.5",
-    "@greenpress/content": "^1.0.14",
-    "@greenpress/secrets": "^1.0.6"
+	"@greenpress/admin": "^0.1.31",
+	"@greenpress/assets": "^1.0.13",
+	"@greenpress/auth": "^1.0.14",
+	"@greenpress/blog-front": "https://github.com/davidmeirlevy/blog-front.git#81f8a1348d956cbb71c03d50488f9df30566ab01",
+	"@greenpress/cli-service-pm2": "0.2.0",
+	"@greenpress/content": "^1.0.15",
+	"@greenpress/drafts": "^1.0.3",
+	"@greenpress/secrets": "^1.0.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+	"nodemon": "^2.0.4"
   },
   "engines": {
-    "node": "14.x"
+	"node": "14.x"
+  },
+  "bugs": {
+	"url": "https://github.com/greenpress/greenpress/issues"
+  },
+  "homepage": "https://github.com/greenpress/greenpress#readme",
+  "publishConfig": {
+	"access": "public"
+  },
+  "repository": {
+	"type": "git",
+	"url": "git+ssh://git@github.com/greenpress/greenpress.git"
   }
 }
