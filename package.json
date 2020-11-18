@@ -11,14 +11,14 @@
   "author": "David Meir-Levy <davidmeirlevy@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@greenpress/admin": "^0.1.31",
+    "@greenpress/admin": "^0.1.32",
     "@greenpress/assets": "^1.0.14",
     "@greenpress/auth": "^1.0.14",
-    "@greenpress/blog-front": "https://github.com/greenpress/blog-front.git#5dcf942925706e4e3da245e11a70f81ae136e147",
+    "@greenpress/blog-front": "https://github.com/greenpress/blog-front.git#4b3c163fbe33e91e4d761c794e322cabbc228f1a",
     "@greenpress/cli-service-pm2": "0.2.0",
     "@greenpress/content": "^1.0.15",
-    "@greenpress/secrets": "^1.0.6",
-    "@greenpress/drafts": "^1.0.3"
+    "@greenpress/drafts": "^1.0.4",
+    "@greenpress/secrets": "^1.0.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
