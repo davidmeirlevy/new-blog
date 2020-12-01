@@ -57,17 +57,42 @@ a:hover {
 	flex-direction: column;
 }
 
-@media all and (max-width: 500px) {
-	.app {
-		margin: 0.5rem;
-	}
-}
-
 .row {
 	display: flex;
 
 	* {
 		flex: 1;
+	}
+}
+
+blockquote {
+	color: #fff;
+	border-radius: 5px;
+	word-break: break-all;
+	margin: 10px;
+	padding: 10px;
+	font-family: monospace;
+	background-color: #ccc;
+}
+
+@media all and (min-width: 500px) {
+	.app {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.content, article {
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.app {
+		margin: 0.5rem;
+	}
+	.content, article {
+		margin: 0 auto;
+		width: 80%;
 	}
 }
 </style>

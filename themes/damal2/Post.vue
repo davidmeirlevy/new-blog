@@ -73,13 +73,6 @@ export default {
 	padding: 10px 0;
 }
 
-.post-content /deep/ blockquote {
-	margin: 10px;
-	padding: 10px;
-	font-family: monospace;
-	background-color: #ccc;
-}
-
 .tags-container {
 	display: flex;
 	justify-content: flex-start;
