@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<main class="content" v-html="content" />
+		<main class="content" v-html="content"/>
 		<template v-if="posts && !posts.length">No posts yet.</template>
 		<Loader v-if="!posts"/>
 		<template v-else-if="posts.length">
