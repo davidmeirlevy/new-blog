@@ -5,7 +5,6 @@ module.exports = {
 	services: {
 		front: {
 			theme: 'global:' + path.join(process.cwd(), 'themes', 'damal2'),
-			script: process.env.FRONT_SERVICE_SCRIPT || (IS_PROD ? 'npm start' : 'npm run build && npm run dev')
 		}
 	}
 }
