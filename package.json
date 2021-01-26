@@ -14,7 +14,7 @@
     "@greenpress/admin": "^0.1.34",
     "@greenpress/assets": "^1.0.15",
     "@greenpress/auth": "^1.0.14",
-    "@greenpress/blog-front": "https://github.com/greenpress/blog-front.git#538da1abc56675fbd63c6b32a2edf6ef7f135f93",
+    "@greenpress/blog-front": "https://github.com/greenpress/blog-front.git#bd5e521514deead431d8a914813b83086ab07036",
     "@greenpress/content": "^1.0.16",
     "@greenpress/drafts": "^1.0.4",
     "@greenpress/secrets": "^1.0.6",
