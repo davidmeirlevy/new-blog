@@ -89,6 +89,7 @@ blockquote {
 @media all and (min-width: 1200px) {
 	.app {
 		margin: 0.5rem;
+		width: auto;
 	}
 	.content, article {
 		margin: 0 auto;
