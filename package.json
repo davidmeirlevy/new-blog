@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "gp-cli-service-pm2-dev",
-	"prestart": "npm i -g pm2",
     "start": "gp-cli-service-pm2-prod",
     "populate-db": "gp-cli-service-pm2-populate-db"
   },
@@ -18,9 +17,8 @@
     "@greenpress/blog-front": "^1.0.10",
     "@greenpress/content": "^1.0.17",
     "@greenpress/drafts": "^1.0.5",
-    "@greenpress/pm2-launcher": "https://github.com/greenpress/pm2-launcher.git#475a62c541f61eb01fa7790e204b7a0c832a7497",
-    "@greenpress/secrets": "^1.0.7",
-    "pm2": "^4.5.5"
+    "@greenpress/pm2-launcher": "https://github.com/greenpress/pm2-launcher.git#341985289700acba946451ffd61d9000d8a5c668",
+    "@greenpress/secrets": "^1.0.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
