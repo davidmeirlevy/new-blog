@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gp-cli-service-pm2-dev",
+	"prestart": "npm i -g pm2",
     "start": "gp-cli-service-pm2-prod",
     "populate-db": "gp-cli-service-pm2-populate-db"
   },
