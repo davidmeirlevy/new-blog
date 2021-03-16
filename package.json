@@ -17,7 +17,7 @@
     "@greenpress/blog-front": "^1.0.10",
     "@greenpress/content": "^1.0.17",
     "@greenpress/drafts": "^1.0.5",
-    "@greenpress/pm2-launcher": "^0.2.4",
+    "@greenpress/pm2-launcher": "git@github.com:greenpress/pm2-launcher.git#475a62c541f61eb01fa7790e204b7a0c832a7497",
     "@greenpress/secrets": "^1.0.7"
   },
   "devDependencies": {
