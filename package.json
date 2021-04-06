@@ -14,7 +14,7 @@
     "@greenpress/admin": "^0.1.36",
     "@greenpress/assets": "^1.2.0",
     "@greenpress/auth": "1.1.1",
-    "@greenpress/blog-front": "^1.1.0",
+    "@greenpress/blog-front": "^1.1.1",
     "@greenpress/content": "^1.1.0",
     "@greenpress/drafts": "^1.1.0",
     "@greenpress/pm2-launcher": "^0.2.4",
