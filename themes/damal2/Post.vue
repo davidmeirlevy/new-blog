@@ -6,7 +6,6 @@
 			<p>
 				<small>{{ authors }} | {{ post.created | dateTime }}</small>
 			</p>
-			<div class="thumbnail-container"><img src="https://cdn1.davidlevy.co.il/npm-screenshot%20(1).png" :alt="post.title"></div>
 			<div v-if="post.thumbnail" class="thumbnail-container"><img :src="post.thumbnail" :alt="post.title"></div>
 			<div v-if="post.short" v-html="post.short" class="post-short" />
 		</div>
