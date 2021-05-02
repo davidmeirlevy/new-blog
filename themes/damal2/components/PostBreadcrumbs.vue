@@ -17,8 +17,13 @@
     }
   }
 </script>
-<style scoped>
+<style scoped lang="scss">
+	@import "../colors";
 	.breadcrumbs {
 		padding-bottom: 10px;
+	}
+
+	a {
+		color: $mainBrightColor;
 	}
 </style>

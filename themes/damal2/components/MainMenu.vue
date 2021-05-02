@@ -29,7 +29,7 @@
 	.menu {
 		flex-wrap: nowrap;
 		display: flex;
-		background-color: #000;
+		background-color: $darkHeader;
 	}
 
 	.menu-opener, .menu-closer {

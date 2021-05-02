@@ -1,25 +1,30 @@
 <template>
 	<div v-if="post" class="post">
-		<PostBreadcrumbs :post="post"/>
-		<article>
+		<div class="post-headers">
+			<PostBreadcrumbs :post="post"/>
 			<h1>{{ post.title }}</h1>
 			<p>
 				<small>{{ authors }} | {{ post.created | dateTime }}</small>
 			</p>
-			<div v-if="post.short" v-html="post.short" class="post-short"></div>
+			<div class="thumbnail-container"><img src="https://cdn1.davidlevy.co.il/npm-screenshot%20(1).png" :alt="post.title"></div>
 			<div v-if="post.thumbnail" class="thumbnail-container"><img :src="post.thumbnail" :alt="post.title"></div>
-			<section class="post-content"
-							 v-for="(content, index) in post.contents"
-							 :key="index"
-							 v-html="content">
-			</section>
-		</article>
-		<div class="tags-container" v-if="post.tags.length">
-			<div>Related tags:&nbsp;</div>
-			<Tags :tags="post.tags"/>
+			<div v-if="post.short" v-html="post.short" class="post-short" />
 		</div>
-		<SharePost :post="post"/>
-		<PostComments :post="post"/>
+		<div class="post-contents">
+			<article>
+				<section class="post-content"
+								 v-for="(content, index) in post.contents"
+								 :key="index"
+								 v-html="content">
+				</section>
+			</article>
+			<div class="tags-container" v-if="post.tags.length">
+				<div>Related tags:&nbsp;</div>
+				<Tags :tags="post.tags"/>
+			</div>
+			<SharePost :post="post"/>
+			<PostComments :post="post"/>
+		</div>
 	</div>
 	<Loader v-else/>
 </template>
@@ -46,7 +51,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.post {
+@import "colors";
+.post-headers {
+	background-color: #202124;
+	padding: 10px;
+	color: $textOnDark;
+}
+.post-contents {
 	padding: 10px;
 }
 
@@ -57,10 +68,22 @@ export default {
 
 .thumbnail-container {
 	text-align: center;
+	margin-top: 10px;
+	max-height: 400px;
+	overflow: hidden;
 
 	img {
 		max-width: 100%;
-		max-height: 400px;
+		max-height: 600px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.thumbnail-container {
+		img {
+			margin-top: -5%;
+			mask-image: radial-gradient($darkHeader, rgba(0,0,0,0) 80%);
+		}
 	}
 }
 
