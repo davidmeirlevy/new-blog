@@ -10,7 +10,7 @@
     "build": "npm run prebuild && lerna run build",
     "clean": "lerna clean --yes",
     "dev": "lerna exec npm run dev --scope=@greenpress/greenpress",
-    "start": "lerna exec npm start --scope=@greenpress/greenpress",
+    "start": "cd apps/greenpress && npm start",
     "populate-db": "lerna exec npm run populate-db --scope=@greenpress/greenpress"
   },
   "author": "David Meir-Levy <davidmeirlevy@gmail.com>",
