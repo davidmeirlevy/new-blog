@@ -1,7 +1,7 @@
 const {execSync} = require('child_process');
 const {unlinkSync} = require('fs');
 const path = require('path');
-const themeName = process.env.THEME || 'default';
+const themeName = process.env.THEME || 'damal2';
 const isWin = process.platform === 'win32';
 
 function getThemePath(theme) {
