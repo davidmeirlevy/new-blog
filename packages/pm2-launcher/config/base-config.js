@@ -74,7 +74,7 @@ module.exports = {
     front: {
       theme: 'damal2',
       cwd: process.env.FRONT_SERVICE_CWD || join(appAbsolutePath, './node_modules/@greenpress/blog-front'),
-      script: process.env.FRONT_SERVICE_SCRIPT || (IS_PROD ? 'npm run build && npm start' : 'npm run build && npm run dev')
+      script: process.env.FRONT_SERVICE_SCRIPT || (IS_PROD ? 'npm start' : 'npm run build && npm run dev')
     }
   }
 }
