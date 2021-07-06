@@ -4,7 +4,7 @@
   "description": "Open-source blogs and content websites platform, made for the 21st century",
   "main": "index.js",
   "scripts": {
-    "postinstall": "NODE_ENV=development lerna bootstrap && npm run build",
+    "postinstall": "NODE_ENV=development lerna bootstrap && npm run build && npm i -g pm2",
     "install:prod-only": "lerna bootstrap -- --production --no-optional",
     "prebuild": "lerna run prebuild",
     "build": "npm run prebuild && lerna run build",
