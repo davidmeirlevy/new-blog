@@ -22,7 +22,7 @@ async function start () {
   }
 
   app.get('/api/ping', (_, res) => {
-    res.send(200).end()
+    res.status(200).send('pong').end()
   })
 
   require('./host-redirect')(app)
