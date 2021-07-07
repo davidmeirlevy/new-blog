@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-function connect (uri) {
+function connect(uri) {
   return mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     .catch((err) => {
       console.error(`Mongoose connection error: ${err}`)
@@ -11,6 +11,7 @@ function connect (uri) {
 }
 
 module.exports.connect = (uri) => {
+  console.log('mongoose connect to: ', uri.split('@')[1])
   const promise = connect(uri)
   // plug in the promise library:
   mongoose.Promise = global.Promise

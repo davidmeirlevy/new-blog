@@ -54,10 +54,12 @@ module.exports = function apiProxy(app: any, config: Partial<IApiProxyConfig>) {
   }
 
   app.use([...contentService.proxies, ...assetsService.proxies, ...draftsService.proxies], (req, res, next) => {
+    console.log('proxy to url:', req.url);
     if (!(req.headers.authorization || (req.headers.cookie && req.headers.cookie.includes('token=')))) {
       next();
       return;
     }
+    console.log('try to auth');
     fetch(meUrl, {
       headers: {
         'Content-Type': 'application/json',
@@ -66,6 +68,7 @@ module.exports = function apiProxy(app: any, config: Partial<IApiProxyConfig>) {
       },
     })
       .then((response) => {
+        console.log('auth returned');
         const setCookie = response.headers.raw()['set-cookie'];
         if (setCookie) {
           res.set('set-cookie', setCookie);
@@ -75,6 +78,7 @@ module.exports = function apiProxy(app: any, config: Partial<IApiProxyConfig>) {
         }
       })
       .then((user = '') => {
+        console.log('user', user);
         req.headers.user = user;
         next();
       })
