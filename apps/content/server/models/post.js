@@ -89,6 +89,8 @@ PostSchema.statics.search = function search (query, freeTextSearch, select, { li
     }
   }
 
+  console.log('searching posts', query)
+
   const makeSearch = () => this.find(query)
     .select(select)
     .sort({ created: -1 })
@@ -97,6 +99,7 @@ PostSchema.statics.search = function search (query, freeTextSearch, select, { li
     .skip(offset)
     .lean()
     .then(list => {
+      console.log('list of posts fro search', list)
       if (list && list.length) {
         if (!categoriesFields) {
           list = list.map(post => {
