@@ -98,6 +98,7 @@ PostSchema.statics.search = function search (query, freeTextSearch, select, { li
     .limit(limit)
     .skip(offset)
     .lean()
+    .exec()
     .then(list => {
       console.log('list of posts fro search', list)
       if (list && list.length) {
