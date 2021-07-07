@@ -21,6 +21,10 @@ async function start () {
     await nuxt.ready()
   }
 
+  app.get('/api/ping', (_, res) => {
+    res.send(200).end()
+  })
+
   require('./host-redirect')(app)
   require('@greenpress/api-proxy-middleware')(app)
 
