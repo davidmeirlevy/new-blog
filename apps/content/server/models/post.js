@@ -116,7 +116,7 @@ PostSchema.statics.search = function search (query, freeTextSearch, select, { li
       })
   }
 
-  if (useCache) {
+  if (false && useCache) {
     return cacheManager.wrap(`${cachePrefix}search:${stringedQuery}.${stringedSearch}.${select}.${limit}.${offset}.${categoriesFields}`, makeSearch)
   } else {
     return makeSearch()
