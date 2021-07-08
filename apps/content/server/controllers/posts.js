@@ -74,7 +74,6 @@ function buildPostsByAuthorQuery(req, res, next) {
 }
 
 function getPostsList(req, res) {
-  console.log('load posts')
   const reqQuery = { ...req.query || {} }
   const isFrontTargeted = reqQuery.target === 'front' || !(req.user && req.user.isEditor)
   const populate = reqQuery.populate || [];
@@ -97,8 +96,6 @@ function getPostsList(req, res) {
     query.category = req.category._id
   }
 
-  console.log('posts by query', query)
-
   getCategoryIdByPathOrId(req.headers.tenant, reqQuery.category, req.category && req.category._id)
     .then(categoryId => {
       if (categoryId) {
@@ -116,7 +113,6 @@ function getPostsList(req, res) {
       }, isFrontTargeted)
     )
     .then(data => {
-      console.log('posts loaded', data)
       if (!data) {
         return Promise.reject(null)
       }
