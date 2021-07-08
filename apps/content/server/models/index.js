@@ -11,7 +11,6 @@ function connect(uri) {
 }
 
 module.exports.connect = (uri) => {
-  console.log('mongoose connect to: ', uri.split('@')[1])
   const promise = connect(uri)
   // plug in the promise library:
   mongoose.Promise = global.Promise
