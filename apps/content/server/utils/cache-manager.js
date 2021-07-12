@@ -1,5 +1,4 @@
-//const { redisUrl } = require('../../config')
-const redisUrl = "redis://redistogo:2ddc059ac0e8e450bd04dc6cf5eff157@pike.redistogo.com:11132/";
+const { redisUrl } = require('../../config')
 
 const { createCacheManager } = require('@greenpress/cache-manager');
 
