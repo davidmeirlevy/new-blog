@@ -66,7 +66,6 @@ module.exports = function apiProxy(app: any, config: Partial<IApiProxyConfig>) {
       },
     })
       .then((response) => {
-        console.log('auth returned');
         const setCookie = response.headers.raw()['set-cookie'];
         if (setCookie) {
           res.set('set-cookie', setCookie);
@@ -76,7 +75,6 @@ module.exports = function apiProxy(app: any, config: Partial<IApiProxyConfig>) {
         }
       })
       .then((user = '') => {
-        console.log('user', user);
         req.headers.user = user;
         next();
       })
