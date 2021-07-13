@@ -129,7 +129,7 @@ function getPost(req, res) {
     .then(comments => {
       const authors = comments.map(c => c.author).concat(req.post.authors)
       req.comments = comments
-      return getUsersMap(req.headers.tenant, authors)
+      return getUsersMap(req.headers.tenant, authors).then(JSON.parse)
     })
     .then(authorsMap => {
       res.status(200)
